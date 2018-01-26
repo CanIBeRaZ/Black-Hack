@@ -118,7 +118,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;BLACKHACK_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;BLACKHACK_EXPORTS;_WINDOWS;_USRDLL;REFLECTIVEDLLINJECTION_VIA_LOADREMOTELIBRARYR;REFLECTIVEDLLINJECTION_CUSTOM_DLLMAIN;WIN_X86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -148,6 +148,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Reflective Loader\ReflectiveLoader.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="constexpr protection\cx_fnv1.h" />
+    <ClInclude Include="constexpr protection\cx_pcg32.h" />
+    <ClInclude Include="constexpr protection\cx_strenc.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Reflective Loader\ReflectiveDLLInjection.h" />
+    <ClInclude Include="Reflective Loader\ReflectiveLoader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

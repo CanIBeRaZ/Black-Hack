@@ -13,10 +13,39 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Файлы заголовков\constexpr protection">
+      <UniqueIdentifier>{6c433341-e822-408c-a313-ff728cba882c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Reflective Loader">
+      <UniqueIdentifier>{dbfa523a-ee8c-4466-891d-a1cc84913819}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Reflective Loader\ReflectiveLoader.c">
+      <Filter>Файлы заголовков\Reflective Loader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="constexpr protection\cx_fnv1.h">
+      <Filter>Файлы заголовков\constexpr protection</Filter>
+    </ClInclude>
+    <ClInclude Include="constexpr protection\cx_pcg32.h">
+      <Filter>Файлы заголовков\constexpr protection</Filter>
+    </ClInclude>
+    <ClInclude Include="constexpr protection\cx_strenc.h">
+      <Filter>Файлы заголовков\constexpr protection</Filter>
+    </ClInclude>
+    <ClInclude Include="Reflective Loader\ReflectiveDLLInjection.h">
+      <Filter>Файлы заголовков\Reflective Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Reflective Loader\ReflectiveLoader.h">
+      <Filter>Файлы заголовков\Reflective Loader</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
