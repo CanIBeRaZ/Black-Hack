@@ -5,3 +5,5 @@
 #include <windows.h>
 
 #include "constexpr protection\cx_strenc.h"
+
+#include "vmthook.h"

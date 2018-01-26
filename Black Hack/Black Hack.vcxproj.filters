@@ -19,6 +19,9 @@
     <Filter Include="Файлы заголовков\Reflective Loader">
       <UniqueIdentifier>{dbfa523a-ee8c-4466-891d-a1cc84913819}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\vmt hook">
+      <UniqueIdentifier>{62029225-95dc-4115-80b3-86fb6be82764}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -26,6 +29,9 @@
     </ClCompile>
     <ClCompile Include="Reflective Loader\ReflectiveLoader.c">
       <Filter>Файлы заголовков\Reflective Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="vmthook.cpp">
+      <Filter>Файлы заголовков\vmt hook</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="Reflective Loader\ReflectiveLoader.h">
       <Filter>Файлы заголовков\Reflective Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="vmthook.h">
+      <Filter>Файлы заголовков\vmt hook</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

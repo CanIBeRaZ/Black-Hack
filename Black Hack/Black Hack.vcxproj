@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="Reflective Loader\ReflectiveLoader.c" />
+    <ClCompile Include="vmthook.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="constexpr protection\cx_fnv1.h" />
@@ -157,6 +158,7 @@
     <ClInclude Include="main.h" />
     <ClInclude Include="Reflective Loader\ReflectiveDLLInjection.h" />
     <ClInclude Include="Reflective Loader\ReflectiveLoader.h" />
+    <ClInclude Include="vmthook.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
