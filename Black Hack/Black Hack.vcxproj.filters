@@ -22,6 +22,9 @@
     <Filter Include="Файлы заголовков\vmt hook">
       <UniqueIdentifier>{62029225-95dc-4115-80b3-86fb6be82764}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\module protection">
+      <UniqueIdentifier>{f6fb8a8c-9033-49c1-8c5d-c4959a407b14}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -55,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="vmthook.h">
       <Filter>Файлы заголовков\vmt hook</Filter>
+    </ClInclude>
+    <ClInclude Include="module protection\PEB.h">
+      <Filter>Файлы заголовков\module protection</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

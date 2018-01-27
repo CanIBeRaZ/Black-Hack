@@ -156,6 +156,7 @@
     <ClInclude Include="constexpr protection\cx_pcg32.h" />
     <ClInclude Include="constexpr protection\cx_strenc.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="module protection\PEB.h" />
     <ClInclude Include="Reflective Loader\ReflectiveDLLInjection.h" />
     <ClInclude Include="Reflective Loader\ReflectiveLoader.h" />
     <ClInclude Include="vmthook.h" />
