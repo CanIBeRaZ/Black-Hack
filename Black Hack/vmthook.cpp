@@ -1,4 +1,4 @@
-#include "vmthook.h"
+#include "main.h"
 
 bool VHookTable::HookTable(DWORD dwTablePtrPtr)
 {

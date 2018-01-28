@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Windows.h>
+#include <windows.h>
 
 bool RemoveHeader(HMODULE hModule)
 {
