@@ -26,6 +26,7 @@ void APIENTRY Hooked_glColor4f(GLfloat red, GLfloat green, GLfloat blue, GLfloat
 
 BOOL APIENTRY Hooked_wglSwapBuffers(HDC hdc)
 {
+	
 	return(*pwglSwapBuffers)(hdc);
 }
 
@@ -51,11 +52,11 @@ void APIENTRY Hooked_glViewport(GLint x, GLint y, GLsizei width, GLsizei height)
 
 void HookOpenGL()
 {
-	HMODULE hmOpenGL = GetModuleHandle("opengl32.dll");
-	pglBegin = (glBegin_t)DetourFunction((LPBYTE)GetProcAddress(hmOpenGL, "glBegin"), (LPBYTE)&Hooked_glBegin);
-	pglColor4f = (glColor4f_t)DetourFunction((LPBYTE)GetProcAddress(hmOpenGL, "glColor4f"), (LPBYTE)&Hooked_glColor4f);
-	pglVertex3fv = (glVertex3fv_t)DetourFunction((LPBYTE)GetProcAddress(hmOpenGL, "glVertex3fv"), (LPBYTE)&Hooked_glVertex3fv);
-	pglClear = (glClear_t)DetourFunction((LPBYTE)GetProcAddress(hmOpenGL, "glClear"), (LPBYTE)&Hooked_glClear);
-	pwglSwapBuffers = (wglSwapBuffers_t)DetourFunction((LPBYTE)GetProcAddress(hmOpenGL, "wglSwapBuffers"), (LPBYTE)&Hooked_wglSwapBuffers);
-	pglViewport = (glViewport_t)DetourFunction((LPBYTE)GetProcAddress(hmOpenGL, "glViewport"), (LPBYTE)&Hooked_glViewport);
+	HMODULE hmOpenGL = GetModuleHandle(charenc("opengl32.dll"));
+	pglBegin = (glBegin_t)DetourFunction((LPBYTE)GetProcAddress(hmOpenGL, charenc("glBegin")), (LPBYTE)&Hooked_glBegin);
+	pglColor4f = (glColor4f_t)DetourFunction((LPBYTE)GetProcAddress(hmOpenGL, charenc("glColor4f")), (LPBYTE)&Hooked_glColor4f);
+	pglVertex3fv = (glVertex3fv_t)DetourFunction((LPBYTE)GetProcAddress(hmOpenGL, charenc("glVertex3fv")), (LPBYTE)&Hooked_glVertex3fv);
+	pglClear = (glClear_t)DetourFunction((LPBYTE)GetProcAddress(hmOpenGL, charenc("glClear")), (LPBYTE)&Hooked_glClear);
+	pwglSwapBuffers = (wglSwapBuffers_t)DetourFunction((LPBYTE)GetProcAddress(hmOpenGL, charenc("wglSwapBuffers")), (LPBYTE)&Hooked_wglSwapBuffers);
+	pglViewport = (glViewport_t)DetourFunction((LPBYTE)GetProcAddress(hmOpenGL, charenc("glViewport")), (LPBYTE)&Hooked_glViewport);
 }
