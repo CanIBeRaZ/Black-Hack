@@ -5,7 +5,7 @@
 #include "windows.h"
 #endif
 
-CreateInterfaceFn CaptureFactory(char* FactoryModule)
+CreateInterfaceFn CaptureFactory(const char* FactoryModule)
 {
 	CreateInterfaceFn Interface = 0;
 
@@ -24,7 +24,7 @@ CreateInterfaceFn CaptureFactory(char* FactoryModule)
 	return Interface;
 }
 
-void *CaptureInterface(CreateInterfaceFn Interface, char* InterfaceName)
+void *CaptureInterface(CreateInterfaceFn Interface, const char* InterfaceName)
 {
 	PVOID dwPointer = nullptr;
 

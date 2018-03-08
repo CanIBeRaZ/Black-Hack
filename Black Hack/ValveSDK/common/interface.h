@@ -47,8 +47,8 @@ enum
 	IFACE_FAILED
 };
 
-void *CaptureInterface(CreateInterfaceFn Interface, char* InterfaceName);
-CreateInterfaceFn CaptureFactory(char* FactoryModule);
+void *CaptureInterface(CreateInterfaceFn Interface, const char* InterfaceName);
+CreateInterfaceFn CaptureFactory(const char* FactoryModule);
 
 #endif // __cplusplus
 

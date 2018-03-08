@@ -84,7 +84,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
@@ -127,6 +127,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -148,23 +149,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="client.cpp" />
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="offsets.cpp" />
+    <ClCompile Include="opengl.cpp" />
     <ClCompile Include="QAngle.cpp" />
     <ClCompile Include="Reflective Loader\ReflectiveLoader.c" />
+    <ClCompile Include="usermsg.cpp" />
     <ClCompile Include="ValveSDK\common\interface.cpp" />
     <ClCompile Include="ValveSDK\parsemsg.cpp" />
     <ClCompile Include="Vector.cpp" />
-    <ClCompile Include="vmthook.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="client.h" />
     <ClInclude Include="constexpr protection\cx_fnv1.h" />
     <ClInclude Include="constexpr protection\cx_pcg32.h" />
     <ClInclude Include="constexpr protection\cx_strenc.h" />
+    <ClInclude Include="detours.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="module protection\PEB.h" />
+    <ClInclude Include="offsets.h" />
+    <ClInclude Include="opengl.h" />
     <ClInclude Include="QAngle.h" />
     <ClInclude Include="Reflective Loader\ReflectiveDLLInjection.h" />
     <ClInclude Include="Reflective Loader\ReflectiveLoader.h" />
+    <ClInclude Include="struct.h" />
+    <ClInclude Include="usermsg.h" />
     <ClInclude Include="ValveSDK\common\beamdef.h" />
     <ClInclude Include="ValveSDK\common\cl_dll.h" />
     <ClInclude Include="ValveSDK\common\cl_entity.h" />
@@ -310,7 +320,6 @@
     <ClInclude Include="ValveSDK\VGUI\VGUI_TreeFolder.h" />
     <ClInclude Include="ValveSDK\VGUI\VGUI_WizardPanel.h" />
     <ClInclude Include="Vector.h" />
-    <ClInclude Include="vmthook.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
