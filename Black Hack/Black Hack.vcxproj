@@ -116,7 +116,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
+      <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
@@ -167,6 +167,7 @@
     <ClInclude Include="constexpr protection\cx_fnv1.h" />
     <ClInclude Include="constexpr protection\cx_pcg32.h" />
     <ClInclude Include="constexpr protection\cx_strenc.h" />
+    <ClInclude Include="detours.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="module protection\PEB.h" />
     <ClInclude Include="offsets.h" />
