@@ -34,6 +34,15 @@
     <Filter Include="Файлы заголовков\ValveSDK\pm_shared">
       <UniqueIdentifier>{41d636a9-3fac-46ae-b2e7-f8b54dbd1824}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\ValveSDK\VGUI">
+      <UniqueIdentifier>{ef13349c-65ba-4efc-a45c-2a772e6c78cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\ValveSDK\VGUI2">
+      <UniqueIdentifier>{36d50130-3b90-41b6-9275-cccb62cc1cbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\ValveSDK\GameUI">
+      <UniqueIdentifier>{3265280e-a80c-4567-8be2-5de91bc6a47b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -64,6 +73,9 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="opengl.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -283,6 +295,270 @@
     </ClInclude>
     <ClInclude Include="detours.h">
       <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\GameUI\IGameConsole.h">
+      <Filter>Файлы заголовков\ValveSDK\GameUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\GameUI\IGameUI.h">
+      <Filter>Файлы заголовков\ValveSDK\GameUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\GameUI\IRunGameEngine.h">
+      <Filter>Файлы заголовков\ValveSDK\GameUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\GameUI\IVGuiModuleLoader.h">
+      <Filter>Файлы заголовков\ValveSDK\GameUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI2\IEngineVGui.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI2</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI2\IHTML.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI2</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI2\IPanel.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI2</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI2\ISurface.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI2</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ActionSignal.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_App.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Bitmap.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_BitmapTGA.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Border.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_BorderLayout.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_BorderPair.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_BuildGroup.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Button.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ButtonController.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ButtonGroup.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ChangeSignal.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_CheckButton.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Color.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ComboKey.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ConfigWizard.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Cursor.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Dar.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_DataInputStream.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Desktop.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_DesktopIcon.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_EditPanel.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_EtchedBorder.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FileInputStream.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FlowLayout.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FocusChangeSignal.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FocusNavGroup.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Font.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Frame.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FrameSignal.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_GridLayout.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_HeaderPanel.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Image.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ImagePanel.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_InputSignal.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_InputStream.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_IntChangeSignal.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_IntLabel.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_KeyCode.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Label.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Layout.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_LayoutInfo.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_LineBorder.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ListPanel.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_LoweredBorder.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Menu.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MenuItem.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MenuSeparator.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MessageBox.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MiniApp.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MouseCode.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Panel.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Point.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_PopupMenu.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ProgressBar.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_RadioButton.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_RaisedBorder.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_RepaintSignal.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Scheme.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ScrollBar.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ScrollPanel.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Slider.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_StackLayout.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_String.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Surface.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_SurfaceBase.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_SurfaceGL.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TablePanel.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TabPanel.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TaskBar.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TextEntry.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TextGrid.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TextImage.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TextPanel.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TickSignal.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ToggleButton.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TreeFolder.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveSDK\VGUI\VGUI_WizardPanel.h">
+      <Filter>Файлы заголовков\ValveSDK\VGUI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

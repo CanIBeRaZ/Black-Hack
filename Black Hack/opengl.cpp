@@ -26,7 +26,32 @@ void APIENTRY Hooked_glColor4f(GLfloat red, GLfloat green, GLfloat blue, GLfloat
 
 BOOL APIENTRY Hooked_wglSwapBuffers(HDC hdc)
 {
-	
+	if (g_Engine.pfnGetCvarFloat((char*)"r_norefresh") == 0) {
+
+		glMatrixMode(GL_PROJECTION);
+		glLoadIdentity();
+
+		glOrtho(0, viewport[2], viewport[3], 0, 0, 1);
+		glDisable(GL_DEPTH_TEST);
+		glMatrixMode(GL_MODELVIEW);
+
+		glPushMatrix();
+		glLoadIdentity();
+		glDisable(GL_TEXTURE_2D);
+
+		glEnable(GL_BLEND);
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+		g_Menu.Run();
+
+		glDisable(GL_BLEND);
+
+		glPopMatrix();
+
+		glEnable(GL_TEXTURE_2D);
+		glEnable(GL_DEPTH_TEST);
+	}
+
 	return(*pwglSwapBuffers)(hdc);
 }
 

@@ -11,6 +11,8 @@
 #include "struct.h"
 #include "offsets.h"
 #include "client.h"
+#include "menu.h"
 #pragma comment(lib, "OpenGL32.lib")
+#pragma comment(lib, "vgui.lib")
 
 extern HMODULE hAppInstance;

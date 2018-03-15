@@ -3,6 +3,17 @@
 #include "ValveSDK\common\cl_dll.h"
 #include "ValveSDK\engine\cdll_int.h"
 
+#include "ValveSDK\VGUI\VGUI_Frame.h"
+#include "ValveSDK\VGUI\VGUI_Panel.h"
+#include "ValveSDK\GameUI\IVGuiModuleLoader.h"
+#include "ValveSDK\GameUI\IRunGameEngine.h"
+#include "ValveSDK\GameUI\IGameUI.h"
+#include "ValveSDK\GameUI\IGameConsole.h"
+#include "ValveSDK\VGUI2\IHTML.h"
+#include "ValveSDK\VGUI2\IPanel.h"
+#include "ValveSDK\VGUI2\ISurface.h"
+#include "ValveSDK\VGUI2\IEngineVGui.h"
+
 typedef struct cl_clientfuncs_s
 {
 	int(*Initialize) (cl_enginefunc_t *pEnginefuncs, int iVersion);

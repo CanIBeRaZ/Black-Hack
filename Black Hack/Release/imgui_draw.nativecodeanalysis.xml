@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+      <FILENAME>stb_truetype.h</FILENAME>
+      <LINE>3874</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Чтение недопустимых данных из "buffer":  доступный для чтения объем равен "_Old_3`kernel_width" байт, однако считать можно только "3" байт.</DESCRIPTION>
+    <FUNCTION>stbtt__h_prefilter</FUNCTION>
+    <DECORATED>?stbtt__h_prefilter@@YAXPAEHHHI@Z</DECORATED>
+    <FUNCLINE>3820</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3822</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"buffer" является массивом размером 8 байт</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3823</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3824</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3825</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"buffer" является выходными данными из "memset" (объявлено в c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\vcruntime_string.h:60)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3826</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3826</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "j&lt;h")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3827</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3828</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3829</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"buffer" является выходными данными из "memset" (объявлено в c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\vcruntime_string.h:60)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3831</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3834</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Предполагается, что параметр ("kernel_width") разрешается в case 2: </MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3835</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3836</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3836</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3837</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3838</LINE>
+        <COLUMN>59</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3839</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3836</LINE>
+        <COLUMN>35</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3836</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3872</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;w")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3874</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3875</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3872</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3872</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Продолжить этот цикл (предполагается "i&lt;w")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3874</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция чтения из "buffer[2]" (доступный для чтения диапазон: от 0 до 1)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+      <FILENAME>stb_truetype.h</FILENAME>
+      <LINE>3936</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Чтение недопустимых данных из "buffer":  доступный для чтения объем равен "_Old_3`kernel_width" байт, однако считать можно только "3" байт.</DESCRIPTION>
+    <FUNCTION>stbtt__v_prefilter</FUNCTION>
+    <DECORATED>?stbtt__v_prefilter@@YAXPAEHHHI@Z</DECORATED>
+    <FUNCLINE>3882</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3884</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"buffer" является массивом размером 8 байт</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3885</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3886</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3887</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"buffer" является выходными данными из "memset" (объявлено в c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\vcruntime_string.h:60)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3888</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3888</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "j&lt;w")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3889</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3890</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3891</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"buffer" является выходными данными из "memset" (объявлено в c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\vcruntime_string.h:60)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3893</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3896</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Предполагается, что параметр ("kernel_width") разрешается в case 2: </MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3897</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3898</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3898</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3899</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3900</LINE>
+        <COLUMN>59</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3901</LINE>
+        <COLUMN>41</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3898</LINE>
+        <COLUMN>35</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3898</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3934</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i&lt;h")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3936</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3937</LINE>
+        <COLUMN>35</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3934</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3934</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Продолжить этот цикл (предполагается "i&lt;h")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3936</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция чтения из "buffer[2]" (доступный для чтения диапазон: от 0 до 1)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+      <FILENAME>imgui_draw.cpp</FILENAME>
+      <LINE>629</LINE>
+      <COLUMN>46</COLUMN>
+    </SFA>
+    <DEFECTCODE>6255</DEFECTCODE>
+    <DESCRIPTION>Функция _alloca сообщает об ошибке, вызывая исключение переполнения стека.  Попробуйте вместо этого использовать _malloca.</DESCRIPTION>
+    <FUNCTION>ImDrawList::AddPolyline</FUNCTION>
+    <DECORATED>?AddPolyline@ImDrawList@@QAEXPBUImVec2@@HI_NM@Z</DECORATED>
+    <FUNCLINE>606</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+      <FILENAME>imgui_draw.cpp</FILENAME>
+      <LINE>808</LINE>
+      <COLUMN>46</COLUMN>
+    </SFA>
+    <DEFECTCODE>6255</DEFECTCODE>
+    <DESCRIPTION>Функция _alloca сообщает об ошибке, вызывая исключение переполнения стека.  Попробуйте вместо этого использовать _malloca.</DESCRIPTION>
+    <FUNCTION>ImDrawList::AddConvexPolyFilled</FUNCTION>
+    <DECORATED>?AddConvexPolyFilled@ImDrawList@@QAEXPBUImVec2@@HI@Z</DECORATED>
+    <FUNCLINE>785</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+      <FILENAME>imgui_draw.cpp</FILENAME>
+      <LINE>815</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Переполнение буфера при записи в "temp_normals":  доступный для записи объем равен "points_count*sizeof(ImVec2)" байт, однако записать можно только "16" байт.</DESCRIPTION>
+    <FUNCTION>ImDrawList::AddConvexPolyFilled</FUNCTION>
+    <DECORATED>?AddConvexPolyFilled@ImDrawList@@QAEXPBUImVec2@@HI@Z</DECORATED>
+    <FUNCLINE>785</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>787</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>789</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>792</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>793</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>794</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>795</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>796</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>799</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>800</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>801</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>801</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>808</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"temp_normals" является массивом размером 0 байт</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>809</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>809</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>809</LINE>
+        <COLUMN>49</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i1&lt;points_count")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>811</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>812</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>813</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>814</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>815</LINE>
+        <COLUMN>31</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция записи в "temp_normals" (за пределами доступного для записи диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+      <FILENAME>imgui_draw.cpp</FILENAME>
+      <LINE>822</LINE>
+      <COLUMN>24</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Чтение недопустимых данных из "temp_normals":  доступный для чтения объем равен "points_count*sizeof(ImVec2)" байт, однако считать можно только "16" байт.</DESCRIPTION>
+    <FUNCTION>ImDrawList::AddConvexPolyFilled</FUNCTION>
+    <DECORATED>?AddConvexPolyFilled@ImDrawList@@QAEXPBUImVec2@@HI@Z</DECORATED>
+    <FUNCLINE>785</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>787</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>789</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>792</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>793</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>794</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>795</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>796</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>799</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>800</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>801</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>801</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>808</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"temp_normals" является массивом размером 0 байт</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>809</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>809</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>809</LINE>
+        <COLUMN>49</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>811</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>812</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>813</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>814</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>815</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>816</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>809</LINE>
+        <COLUMN>68</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>809</LINE>
+        <COLUMN>49</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>811</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>812</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>813</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>814</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>815</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>816</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>809</LINE>
+        <COLUMN>68</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>809</LINE>
+        <COLUMN>49</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>819</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>819</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>819</LINE>
+        <COLUMN>49</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "i1&lt;points_count")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>822</LINE>
+        <COLUMN>24</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Недопустимая операция чтения из "temp_normals" (за пределами доступного для чтения диапазона)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

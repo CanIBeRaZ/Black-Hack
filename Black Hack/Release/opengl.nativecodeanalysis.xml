@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+      <FILENAME>opengl.cpp</FILENAME>
+      <LINE>81</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hmOpenGL" может быть равен "0":  это не соответствует спецификации функции "GetProcAddress". </DESCRIPTION>
+    <FUNCTION>HookOpenGL</FUNCTION>
+    <DECORATED>?HookOpenGL@@YAXXZ</DECORATED>
+    <FUNCLINE>78</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>opengl.cpp</FILENAME>
+        <LINE>80</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hmOpenGL" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>opengl.cpp</FILENAME>
+        <LINE>81</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hmOpenGL" является входными данными для "GetProcAddress" (объявлено в c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\libloaderapi.h:386)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>opengl.cpp</FILENAME>
+        <LINE>81</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hmOpenGL" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "GetProcAddress"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

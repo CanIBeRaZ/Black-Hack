@@ -1,8 +1,6 @@
 #include "main.h"
 
-
-
-
+SCREENINFO g_Screen;
 
 void CL_CreateMove(float frametime, struct usercmd_s *cmd, int active)
 {
@@ -13,12 +11,15 @@ void CL_CreateMove(float frametime, struct usercmd_s *cmd, int active)
 
 void HUD_Frame(double time)
 {
+	g_Engine.pfnGetScreenInfo(&g_Screen);
 
 	g_Client.HUD_Frame(time);
 }
 
 void HUD_Frame_init(double time)
 {
+	g_Engine.pfnGetScreenInfo(&g_Screen);
+
 	HookOpenGL();
 
 	g_Engine.Con_Printf((char*)charenc("Injected :3\n"));

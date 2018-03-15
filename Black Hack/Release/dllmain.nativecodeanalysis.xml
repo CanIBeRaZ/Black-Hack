@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\module protection\</FILEPATH>
+      <FILENAME>peb.h</FILENAME>
+      <LINE>35</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"Temp_value_#2181" может быть равен "0":  это не соответствует спецификации функции "GetProcAddress". </DESCRIPTION>
+    <FUNCTION>HideThread</FUNCTION>
+    <DECORATED>?HideThread@@YA_NPAX@Z</DECORATED>
+    <FUNCLINE>29</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\module protection\</FILEPATH>
+        <FILENAME>peb.h</FILENAME>
+        <LINE>35</LINE>
+        <COLUMN>25</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"&lt;символ&gt;" получает возвращаемое значение из "GetModuleHandleA" (объявлено в c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\libloaderapi.h:302)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\module protection\</FILEPATH>
+        <FILENAME>peb.h</FILENAME>
+        <LINE>31</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\module protection\</FILEPATH>
+        <FILENAME>peb.h</FILENAME>
+        <LINE>33</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\module protection\</FILEPATH>
+        <FILENAME>peb.h</FILENAME>
+        <LINE>35</LINE>
+        <COLUMN>25</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"&lt;символ&gt;" получает возвращаемое значение из "GetModuleHandleA" (объявлено в c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\libloaderapi.h:302)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\module protection\</FILEPATH>
+        <FILENAME>peb.h</FILENAME>
+        <LINE>35</LINE>
+        <COLUMN>25</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"Temp_value_#2181" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "GetProcAddress"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+      <FILENAME>dllmain.cpp</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>6258</DEFECTCODE>
+    <DESCRIPTION>Использование TerminateThread не позволит выполнить правильную очистку потока.</DESCRIPTION>
+    <FUNCTION>DllMain</FUNCTION>
+    <DECORATED>DllMain@12</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+      <FILENAME>dllmain.cpp</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"hThread" может быть равен "0":  это не соответствует спецификации функции "TerminateThread". </DESCRIPTION>
+    <FUNCTION>DllMain</FUNCTION>
+    <DECORATED>DllMain@12</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>28</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>34</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>35</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>36</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>38</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>41</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>43</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hThread" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>45</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hThread" является аргументом ввода-вывода для "HideThread" (объявлено в c:\users\данил\documents\github\black-hack\black hack\module protection\peb.h: 29)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>45</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в эту ветвь (предполагается "!HideThread(hThread)")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>47</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"hThread" является входными данными для "TerminateThread" (объявлено в c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\processthreadsapi.h:342)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\</FILEPATH>
+        <FILENAME>dllmain.cpp</FILENAME>
+        <LINE>47</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"hThread" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "TerminateThread"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

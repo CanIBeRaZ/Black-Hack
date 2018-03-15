@@ -92,10 +92,13 @@
       <ConformanceMode>true</ConformanceMode>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -123,6 +126,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;BLACKHACK_EXPORTS;_WINDOWS;_USRDLL;REFLECTIVEDLLINJECTION_VIA_LOADREMOTELIBRARYR;REFLECTIVEDLLINJECTION_CUSTOM_DLLMAIN;WIN_X86;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -130,6 +134,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -153,6 +159,7 @@
   <ItemGroup>
     <ClCompile Include="client.cpp" />
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="menu.cpp" />
     <ClCompile Include="offsets.cpp" />
     <ClCompile Include="opengl.cpp" />
     <ClCompile Include="QAngle.cpp" />
@@ -169,6 +176,7 @@
     <ClInclude Include="constexpr protection\cx_strenc.h" />
     <ClInclude Include="detours.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="menu.h" />
     <ClInclude Include="module protection\PEB.h" />
     <ClInclude Include="offsets.h" />
     <ClInclude Include="opengl.h" />
@@ -227,6 +235,10 @@
     <ClInclude Include="ValveSDK\engine\progs.h" />
     <ClInclude Include="ValveSDK\engine\shake.h" />
     <ClInclude Include="ValveSDK\engine\studio.h" />
+    <ClInclude Include="ValveSDK\GameUI\IGameConsole.h" />
+    <ClInclude Include="ValveSDK\GameUI\IGameUI.h" />
+    <ClInclude Include="ValveSDK\GameUI\IRunGameEngine.h" />
+    <ClInclude Include="ValveSDK\GameUI\IVGuiModuleLoader.h" />
     <ClInclude Include="ValveSDK\parsemsg.h" />
     <ClInclude Include="ValveSDK\pm_shared\pm_debug.h" />
     <ClInclude Include="ValveSDK\pm_shared\pm_defs.h" />
@@ -234,6 +246,89 @@
     <ClInclude Include="ValveSDK\pm_shared\pm_materials.h" />
     <ClInclude Include="ValveSDK\pm_shared\pm_movevars.h" />
     <ClInclude Include="ValveSDK\pm_shared\pm_shared.h" />
+    <ClInclude Include="ValveSDK\VGUI2\IEngineVGui.h" />
+    <ClInclude Include="ValveSDK\VGUI2\IHTML.h" />
+    <ClInclude Include="ValveSDK\VGUI2\IPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI2\ISurface.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ActionSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_App.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Bitmap.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_BitmapTGA.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Border.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_BorderLayout.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_BorderPair.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_BuildGroup.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Button.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ButtonController.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ButtonGroup.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ChangeSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_CheckButton.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Color.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ComboKey.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ConfigWizard.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Cursor.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Dar.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_DataInputStream.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Desktop.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_DesktopIcon.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_EditPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_EtchedBorder.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FileInputStream.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FlowLayout.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FocusChangeSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FocusNavGroup.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Font.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Frame.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FrameSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_GridLayout.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_HeaderPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Image.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ImagePanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_InputSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_InputStream.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_IntChangeSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_IntLabel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_KeyCode.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Label.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Layout.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_LayoutInfo.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_LineBorder.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ListPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_LoweredBorder.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Menu.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MenuItem.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MenuSeparator.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MessageBox.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MiniApp.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MouseCode.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Panel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Point.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_PopupMenu.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ProgressBar.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_RadioButton.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_RaisedBorder.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_RepaintSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Scheme.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ScrollBar.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ScrollPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Slider.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_StackLayout.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_String.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Surface.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_SurfaceBase.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_SurfaceGL.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TablePanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TabPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TaskBar.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TextEntry.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TextGrid.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TextImage.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TextPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TickSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ToggleButton.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TreeFolder.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_WizardPanel.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+      <FILENAME>imgui_demo.cpp</FILENAME>
+      <LINE>2220</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Разыменование пустого указателя "font-&gt;ConfigData". </DESCRIPTION>
+    <FUNCTION>ImGui::ShowStyleEditor</FUNCTION>
+    <DECORATED>?ShowStyleEditor@ImGui@@YAXPAUImGuiStyle@@@Z</DECORATED>
+    <FUNCLINE>2055</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2058</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2059</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2062</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2063</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2065</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2066</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2069</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2071</LINE>
+        <COLUMN>32</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2073</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2076</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2078</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2078</LINE>
+        <COLUMN>79</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2079</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2080</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2080</LINE>
+        <COLUMN>77</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2081</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2082</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2082</LINE>
+        <COLUMN>77</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2085</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2087</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2088</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2090</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2091</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2093</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2105</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2133</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2192</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2193</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2195</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2196</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2201</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2202</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2202</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2204</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2205</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2206</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"font-&gt;ConfigData" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2207</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2207</LINE>
+        <COLUMN>53</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2208</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в эту ветвь (предполагается "font_details_opened")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2210</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2211</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2212</LINE>
+        <COLUMN>30</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2213</LINE>
+        <COLUMN>32</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2214</LINE>
+        <COLUMN>33</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2215</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2215</LINE>
+        <COLUMN>49</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2216</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2217</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2218</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2219</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2219</LINE>
+        <COLUMN>48</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>ветвь</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Войти в этот цикл (предполагается "config_i&lt;font-&gt;ConfigDataCount")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2220</LINE>
+        <COLUMN>36</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"font-&gt;ConfigData" разыменовано, но, возможно, по-прежнему равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+      <FILENAME>imgui_demo.cpp</FILENAME>
+      <LINE>2619</LINE>
+      <COLUMN>127</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"buff" может быть равен "0":  это не соответствует спецификации функции "memcpy". </DESCRIPTION>
+    <FUNCTION>ExampleAppConsole::Strdup</FUNCTION>
+    <DECORATED>?Strdup@ExampleAppConsole@@SAPADPBD@Z</DECORATED>
+    <FUNCLINE>2619</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2619</LINE>
+        <COLUMN>78</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2619</LINE>
+        <COLUMN>105</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"buff" может быть равно NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2619</LINE>
+        <COLUMN>127</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>объявление</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"buff" является аргументом ввода-вывода для "memcpy" (объявлено в c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\vcruntime_string.h: 40)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\данил\documents\github\black-hack\black hack\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2619</LINE>
+        <COLUMN>127</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>использование</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"buff" не должно равняться NULL, поскольку это не соответствует SAL-аннотации для "memcpy"</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
